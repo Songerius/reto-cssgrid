@@ -74,7 +74,7 @@ body {
     color: white;
     z-index: 1;
     left: 50%;
-    top: 50%;
+    top: 40%;
     
   }
 
@@ -96,11 +96,11 @@ body {
 .item {
   /* grid-row: span 4; */
     background:white;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .header {
-    position: relative;
+    /* position: relative; */
     grid-column: span 4;
     grid-row: span 5;
     /* background: url(/Reto/img/video.jpg); */
@@ -112,7 +112,7 @@ body {
 figure {
     margin: 0;
     /* width: 250px; */
-    height: 300px;
+    height: 280px;
     /* max-width: 150px; */
     
 }
@@ -125,12 +125,14 @@ figure {
 }
 .video-square {
   grid-row: span 1;
+  position: relative;
 }
 
 .aside {
     grid-column: span 1;
     grid-row: span 5;
-    background: rgb(11, 24, 66);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,22,88,1) 0%, rgba(41,41,41,1) 0%, rgba(4,27,65,1) 0%, rgba(8,21,112,1) 100%);
 }
 
 .aside-logo {
@@ -145,22 +147,64 @@ figure {
 }
 .figure-aside img {
     /* width: 150px; */
-    width: inherit;
+    width: 100%;
     /* object-fit: cover; */
 }
 
 
 .aside .subitem {
-    border: 1px solid lightblue;
+    /* border: 1px solid lightblue; */
 }
-li {
+.aside > .subitem li {
     color: white;
-    font-size: 14px;
+    font-size: 12px;
+    margin: 5px 5px;
 }
+.aside > .subitem h2 {
+  margin-left: 5%;
+  color: white;
+  font-size: 16px;
+  
+}
+.aside > .subitem .coin h3 {
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+}
+.topcoin {
+  padding: 3% 5%;
+  display: flex;
+  margin: 10px;
+}
+.coin  {
+  display: inline-block;
+  height: 50px;
+  margin-left: 15px;
+  
+}
+.topcoin figure {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  /* width: 50px;
+  border-radius: 100%;
+  border: 1px solid red; */
+  /* display: inline-block; */
+}
+.topcoin img {
+  width: 50px;
+  border-radius: 50%;
 
+  /* display: inline-block; */
+}
+.video-items {
+  grid-column: span 4;
+  grid-row: span 4;
+  background: red;
+}
 .footer {
-    grid-column: span 4;
-    grid-row: span 3;
+    /* grid-column: span 4;
+    grid-row: span 3; */
     background: yellow;
 }
 .footer .subitem {
