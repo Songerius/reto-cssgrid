@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: 'Inter';
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(189, 189, 189, 1);
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(109, 109, 109, 1);
+    border-radius: 15px;
+}
+
+/* Fuentes para iconos */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?rknbuo');
+    src:  url('../fonts/icomoon.eot?rknbuo#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?rknbuo') format('truetype'),
+      url('../fonts/icomoon.woff?rknbuo') format('woff'),
+      url('../fonts/icomoon.svg?rknbuo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-download:before {
+    content: "\e95e";
+    background: none;
+  }
+  .icon-share:before {
+    content: "\e968";
+  }
+  .icon-play:before {
+    content: "\ea15";
+    background: none;
+  }
+  .icon-back:before {
+    content: "\ea40";
+    background: none;
+  }
+  
+  .icono1 {
+    font-size: 1.5rem;
+    position: absolute;
+    color: white;
+    z-index: 1;
+    left: 5px;
+    top: 5px;
+
+  }
+  .icono2 {
+    /* background-color: rgba(27, 33, 39,0); */
+    font-size: 4rem;
+    position: absolute;
+    color: white;
+    z-index: 1;
+    left: 50%;
+    top: 40%;
+    
+  }
+
+/*  */
+
+
+.container {
+    background: lightblue;
+    border: 1px solid black;
+    display: grid;
+    height: 100vh;
+    grid-template: minmax(30%, 1fr) minmax(autofill, 1fr)/200px 80%;
+    grid-template-areas:    "aside header"
+                            "aside footer";
+    
+}
+.item {
+    background: yellow;
+    border: 1px solid blue;
+}
+
+.header {
+    position: relative;
+    grid-area: header;
+    /* background: url(/Reto/img/video.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+
+}
+figure {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    /* max-width: 150px; */
+    
+}
+.header img {
+    /* width: inherit; */
+    /* object-fit: cover; */
+    width: inherit;
+    height: inherit;
+    /* object-fit: cover; */
+}
+.aside {
+    grid-area: aside;
+    background: rgb(11, 24, 66);
+}
+
+.aside-logo {
+    padding: 1.5rem 2.2rem 1rem 0.8rem ;
+}
+
+.figure-aside {
+    width: 100%;
+    height: 100%;
+
+
+}
+.figure-aside img {
+    /* width: 150px; */
+    width: inherit;
+    object-fit: cover;
+}
+
+
+.aside .subitem {
+    border: 1px solid lightblue;
+}
+li {
+    color: white;
+    font-size: 14px;
+}
+
+.footer {
+    grid-area: footer;
+    background: white;
+}
+.footer .subitem {
+    border: 1px solid lightblue;
+}
